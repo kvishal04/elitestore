@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-productdetail',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   templateUrl: './productdetail.component.html',
   styleUrl: './productdetail.component.scss'
 })
-export class ProductdetailComponent {
+export class ProductdetailComponent implements OnInit {
 
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
