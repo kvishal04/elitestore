@@ -25,5 +25,9 @@ export const routes: Routes = [
         path: 'forgot',
         component: ForgotComponent
     },
-    
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'home'
+    },
 ];

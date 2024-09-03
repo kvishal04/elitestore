@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-usermgmt',
@@ -9,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class UsermgmtComponent {
 
+  constructor(private toastr: ToastrService){
+
+  }
+
+  clcckme (){
+    this.toastr.success("toast woking")
+  }
 }
